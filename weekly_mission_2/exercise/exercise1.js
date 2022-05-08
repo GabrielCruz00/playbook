@@ -42,3 +42,24 @@ const issue = {
 console.log('Modelado de Issue');
 console.log(issue.getTittleAndAuthor());
 console.log(issue.getGeneralInfo());
+
+const pullRequest = {
+    tittle: 'Modificando estilos',
+    branchName: 'Styles',
+    dateCreated: new Date(),
+    status: 'OPEN',
+    repositoryNameAssociated: 'LaunchX',
+
+    getStatus: function() {
+        return `Status: ${this.status}`;
+    },
+
+    getTittleAndName: function(){
+        return `PullRequest: ${this.tittle}, Repository: ${this.repositoryNameAssociated}`;
+    }
+}
+
+console.log('Modelado de PR');
+console.log(pullRequest.tittle);
+console.log(pullRequest.getStatus());
+console.log(pullRequest.getTittleAndName());
