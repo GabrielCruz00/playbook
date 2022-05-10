@@ -17,3 +17,8 @@ console.log(stackJS);
 console.log('5) Buscar el primer explorer de CDMX');
 const explorerCDMX = explorers.find(explorer => explorer.city == 'CDMX');
 console.log(explorerCDMX);
+
+console.log('6) Obtener la suma de todos los ejercicios completos');
+const exeCompleted = explorers.map(exercise => exercise.exercisesCompleted)
+const sumExercises = exeCompleted.reduce((sum, item) => sum + item, 0);
+console.log(sumExercises);
