@@ -13,7 +13,7 @@ export const explorers = [
 
             frontend: {
                 isFinished: true,
-                exercisesCompleted: true
+                exercisesFinished: true
             }
         }
     },
