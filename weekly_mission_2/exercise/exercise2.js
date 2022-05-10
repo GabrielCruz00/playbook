@@ -22,3 +22,8 @@ console.log('6) Obtener la suma de todos los ejercicios completos');
 const exeCompleted = explorers.map(exercise => exercise.exercisesCompleted)
 const sumExercises = exeCompleted.reduce((sum, item) => sum + item, 0);
 console.log(sumExercises);
+
+console.log('7) Validar si algun explorer "exercisesFinished: true" en frontend');
+const exeFinished = explorers.map(item => item.missions.frontend.exercisesFinished)
+const expSome = exeFinished.some(item => item === true);
+console.log(expSome);
