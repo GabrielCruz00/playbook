@@ -24,6 +24,11 @@ const sumExercises = exeCompleted.reduce((sum, item) => sum + item, 0);
 console.log(sumExercises);
 
 console.log('7) Validar si algun explorer "exercisesFinished: true" en frontend');
-const exeFinished = explorers.map(item => item.missions.frontend.exercisesFinished)
+const exeFinished = explorers.map(item => item.missions.frontend.exercisesFinished);
 const expSome = exeFinished.some(item => item === true);
 console.log(expSome);
+
+console.log('8) Validar si todos los explorers tienen "isFinished: true" en onboarding');
+const onboardingFinished = explorers.map(item => item.missions.onboarding.isFinished);
+const expEvery = onboardingFinished.every(item => item === true);
+console.log(expEvery);
