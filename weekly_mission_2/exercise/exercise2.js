@@ -13,3 +13,7 @@ console.log(stacks);
 console.log('4) Lista de explorers con stack: js');
 const stackJS = explorers.filter(item => item.stack.includes('js'));
 console.log(stackJS);
+
+console.log('5) Buscar el primer explorer de CDMX');
+const explorerCDMX = explorers.find(explorer => explorer.city == 'CDMX');
+console.log(explorerCDMX);
