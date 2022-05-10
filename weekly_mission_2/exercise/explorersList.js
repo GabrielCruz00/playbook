@@ -19,7 +19,7 @@ export const explorers = [
     },
     {
         name: 'Explorer 2',
-        exercises_completed: 9,
+        exercisesCompleted: 9,
         city: 'Veracruz',
         rate: 50,
         stack: ['js'],
@@ -37,7 +37,7 @@ export const explorers = [
       },
       {
         name: 'Explorer 3',
-        exercises_completed: 3,
+        exercisesCompleted: 3,
         city: 'Sonora',
         rate: 100,
         stack: ['elixir'],
