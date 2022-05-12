@@ -33,7 +33,7 @@ export class issue {
         return `Issue: ${this.tittle}, Author: ${this.author}`;
     }
     getGeneralInfo(){
-        return `Issue: ${this.tittle}, Author: ${this.status}`;
+        return `Issue: ${this.tittle}, Status: ${this.status}`;
     }
 }
 
@@ -49,7 +49,7 @@ export class pullRequest {
     getStatus(){
         return `Status: ${this.status}`;
     }
-    getTittleAndName(){
+    getGeneralInfo(){
         return `PullRequest: ${this.tittle}, Repository: ${this.repoName}`;
     }
 }
